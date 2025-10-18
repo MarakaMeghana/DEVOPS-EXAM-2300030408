@@ -1,16 +1,18 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import Navbar from "./components/Navbar";
-const API_URL = import.meta.env.VITE_API_URL;
+
+// Backend URL when deployed on Tomcat
+const API_URL = "/2300030408_backend/productapi";
 
 function App() {
   return (
-    <div>
-      <BrowserRouter>
+    <BrowserRouter basename="/2300030408_frontend">
       <Navbar />
-      </BrowserRouter>
-    </div>
+      {/* Add your Routes here */}
+    </BrowserRouter>
   );
 }
 
+export { App, API_URL };
 export default App;
