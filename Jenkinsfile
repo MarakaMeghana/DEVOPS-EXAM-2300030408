@@ -25,9 +25,6 @@ pipeline {
                 echo Creating new frontend folder...
                 mkdir "C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\webapps\\2300030408_frontend"
 
-                echo Checking dist folder contents...
-                dir frontend-reactapp\\dist
-
                 echo Copying build files to Tomcat webapps...
                 xcopy /E /I /Y "frontend-reactapp\\dist\\*" "C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\webapps\\2300030408_frontend\\"
 

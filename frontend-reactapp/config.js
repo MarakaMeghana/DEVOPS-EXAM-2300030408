@@ -1,6 +1,6 @@
 const config = {
-  // change the port if your backend runs on another
-  url: "http://localhost:2030/productapi"
+  // Backend runs on Tomcat port 2030 under context 2300030408_backend
+  url: "http://localhost:2030/2300030408_backend/productapi"
 };
 
 export default config;
